@@ -1,10 +1,10 @@
 // tailwind config is required for editor support
 
-import sharedConfig from '@nexus-politics/tailwind-config';
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
+import sharedConfig from "@nexus-politics/tailwind-config";
 
-const config: Pick<Config, 'content' | 'presets'> = {
-  content: ['./app/**/*.tsx'],
+const config: Pick<Config, "content" | "presets"> = {
+  content: ["./app/**/*.tsx"],
   presets: [sharedConfig],
 };
 
