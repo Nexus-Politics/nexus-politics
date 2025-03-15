@@ -1,5 +1,5 @@
 {
-  "name": "@nexus-politics",
+  "name": "nexus-politics",
   "private": true,
   "scripts": {
     "build": "turbo run build",
