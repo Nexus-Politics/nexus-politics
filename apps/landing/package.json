@@ -11,11 +11,21 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@nexus-politics/cobe": "workspace:*",
     "@nexus-politics/ui": "workspace:*",
-    "cobe": "^0.6.3",
+    "@radix-ui/react-slot": "^1.1.2",
+    "@react-three/drei": "^10.0.4",
+    "@react-three/fiber": "^9.1.0",
+    "@types/three": "^0.174.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.482.0",
     "next": "^15.2.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.174.0"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^15.2.1",
