@@ -1,6 +1,6 @@
 {
-  "name": "@repo/ui",
-  "version": "0.0.0",
+  "name": "@nexus-politics/ui",
+  "version": "0.0.1",
   "sideEffects": [
     "**/*.css"
   ],
@@ -22,9 +22,9 @@
     "react": "^19"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/tailwind-config": "*",
-    "@repo/typescript-config": "*",
+    "@nexus-politics/eslint-config": "workspace:*",
+    "@nexus-politics/tailwind-config": "workspace:*",
+    "@nexus-politics/typescript-config": "workspace:*",
     "@types/react": "^19.0.10",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.22.0",

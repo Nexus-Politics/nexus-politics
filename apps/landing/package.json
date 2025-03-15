@@ -20,9 +20,9 @@
   },
   "devDependencies": {
     "typescript": "^5",
-    "@nexus-politics/eslint-config": "*",
-    "@nexus-politics/tailwind-config": "*",
-    "@nexus-politics/typescript-config": "*",
+    "@nexus-politics/eslint-config": "workspace:*",
+    "@nexus-politics/tailwind-config": "workspace:*",
+    "@nexus-politics/typescript-config": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
