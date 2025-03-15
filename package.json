@@ -2,6 +2,7 @@
   "name": "nexus-politics",
   "private": true,
   "scripts": {
+    "preinstall": "node scripts/check-node-version.js",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
@@ -14,7 +15,7 @@
     "turbo": "^2.4.4"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "packageManager": "bun@1.2.5",
   "workspaces": [
