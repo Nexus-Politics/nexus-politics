@@ -1,0 +1,2 @@
+lint = ["bun run lint"]
+check-types = ["bun run check-types"]
