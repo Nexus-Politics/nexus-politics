@@ -62,8 +62,9 @@ export default buildConfig({
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
   email: resendAdapter({
-    defaultFromAddress: "info@nexuspolitics.org",
-    defaultFromName: "Nexus Politics Notifications",
+    defaultFromAddress: "info@updates.nexuspolitics.org",
+    defaultFromName: "Nexus Politics Updates",
+
     apiKey: process.env.RESEND_API_KEY || "",
   }),
   db: vercelPostgresAdapter({
