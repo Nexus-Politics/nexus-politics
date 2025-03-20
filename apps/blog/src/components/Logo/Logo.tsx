@@ -21,13 +21,13 @@ export const Logo = (props: Props) => {
     /* eslint-disable @next/next/no-img-element */
     <Image
       alt="Nexus Politics Logo"
-      width={193}
-      height={34}
+      width={400}
+      height={225}
       loading={loading}
       fetchPriority={priority}
       decoding="async"
-      className={clsx("h-[34px] w-full max-w-[9.375rem]", className)}
-      src="/logo_transparent.png"
+      className={clsx("h-auto w-full max-w-[9.375rem]", className)}
+      src="/logo_transparent_white.png"
     />
   );
 };
