@@ -23,7 +23,9 @@
         "DATABASE_URL",
         "PAYLOAD_SECRET",
         "RESEND_API_KEY",
-        "BLOB_READ_WRITE_TOKEN"
+        "BLOB_READ_WRITE_TOKEN",
+        "CRON_SECRET",
+        "PREVIEW_SECRET"
       ]
     }
   }
