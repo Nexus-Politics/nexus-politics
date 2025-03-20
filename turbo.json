@@ -4,12 +4,6 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "env": [
-        "POSTGRES_URL",
-        "DATABASE_URL",
-        "PAYLOAD_ SECRET",
-        "RESEND_API_KEY"
-      ],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
     },
@@ -22,6 +16,14 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "@nexuspolitics/blog#build": {
+      "env": [
+        "POSTGRES_URL",
+        "DATABASE_URL",
+        "PAYLOAD_ SECRET",
+        "RESEND_API_KEY"
+      ]
     }
   }
 }
