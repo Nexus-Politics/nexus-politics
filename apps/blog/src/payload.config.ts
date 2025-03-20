@@ -62,8 +62,8 @@ export default buildConfig({
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
   email: resendAdapter({
-    defaultFromAddress: "dev@payloadcms.com",
-    defaultFromName: "Payload CMS",
+    defaultFromAddress: "info@nexuspolitics.org",
+    defaultFromName: "Nexus Politics Notifications",
     apiKey: process.env.RESEND_API_KEY || "",
   }),
   db: vercelPostgresAdapter({
