@@ -21,7 +21,7 @@
       "env": [
         "POSTGRES_URL",
         "DATABASE_URL",
-        "PAYLOAD_ SECRET",
+        "PAYLOAD_SECRET",
         "RESEND_API_KEY"
       ]
     }
