@@ -1,4 +1,4 @@
-# Payload Website Template
+# Nexus Politics Blog
 
 ## Tools
 
