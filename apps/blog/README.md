@@ -4,6 +4,13 @@
   - Media Store via Vercel Blob Store
   - Postgres DB via Neon (integrated via Vercel)
 
+## Info
+
+- if needed to update the importMap file:
+  - rename `src/app/(payload)/admin/importMap.ts` to a js file
+  - run `bun run generate:importmap`
+  - rename the js file back to a typescript file
+
 This is the official [Payload Website Template](https://github.com/payloadcms/payload/blob/main/templates/website). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
 This template is right for you if you are working on:
