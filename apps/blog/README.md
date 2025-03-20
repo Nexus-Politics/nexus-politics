@@ -1,8 +1,15 @@
 # Payload Website Template
 
-- DBs
-  - Media Store via Vercel Blob Store
-  - Postgres DB via Neon (integrated via Vercel)
+## Tools
+
+### DBs
+
+- Media Store via Vercel Blob Store
+- Postgres DB via Neon (integrated via Vercel)
+
+### Email
+
+- Resend
 
 ## Info
 
