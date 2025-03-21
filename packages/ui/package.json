@@ -10,10 +10,9 @@
   "exports": {
     "./styles.css": "./dist/index.css",
     "./utils": "./src/lib/utils.ts",
-    "./*": [
-      "./src/*.tsx",
-      "./src/shadcn/*.tsx"
-    ]
+    ".": "./src/index.ts",
+    "./hooks": "./src/hooks/index.ts",
+    "./lib": "./src/lib/index.ts"
   },
   "license": "MIT",
   "scripts": {

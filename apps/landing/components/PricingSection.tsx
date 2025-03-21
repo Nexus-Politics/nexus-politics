@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import WaitlistForm from "./WaitlistForm";
 
 interface PricingFeature {
   title: string;
@@ -275,15 +276,8 @@ export default function PricingSection() {
               We're currently in private beta. Sign up now to be among the first
               to experience Nexus Politics when we launch.
             </p>
-            <div className="mx-auto flex max-w-md flex-col gap-3 sm:flex-row">
-              <input
-                type="email"
-                placeholder="Your email address"
-                className="flex-grow rounded-md border border-[#C9DBFD]/30 bg-[#0E191C]/80 p-3 text-white focus:border-[#C9DBFD]/60 focus:outline-none"
-              />
-              <button className="whitespace-nowrap rounded-md bg-[#DA655E] p-3 font-semibold text-white transition-colors hover:bg-[#9B3D3D]">
-                Join Waitlist
-              </button>
+            <div className="mx-auto w-full max-w-md">
+              <WaitlistForm variant="inline" />
             </div>
           </div>
 
