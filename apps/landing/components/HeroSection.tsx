@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import LogoMarquee from "./LogoMarquee";
 import ScrollSection from "./scroll/ScrollSection";
+import WaitlistForm from "./WaitlistForm";
 
 interface HeroSectionProps {
   onVisible: (visible: boolean) => void;
@@ -36,21 +37,12 @@ export default function HeroSection({ onVisible }: HeroSectionProps) {
         </motion.p>
 
         <motion.div
-          className="mt-8 grid w-full max-w-md grid-cols-1 gap-4 md:grid-cols-2"
+          className="mt-8 w-full max-w-md"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <div className="w-full">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full rounded-md border border-[#C9DBFD]/30 bg-[#0E191C]/80 p-3 text-white"
-            />
-          </div>
-          <button className="rounded-md bg-[#DA655E] p-3 font-semibold text-white transition-colors hover:bg-[#9B3D3D]">
-            Join Waitlist
-          </button>
+          <WaitlistForm variant="inline" />
         </motion.div>
 
         <LogoMarquee />

@@ -276,7 +276,8 @@ export default function PricingSection() {
               We're currently in private beta. Sign up now to be among the first
               to experience Nexus Politics when we launch.
             </p>
-            <div className="mx-auto w-full max-w-md">
+
+            <div className="mx-auto max-w-md">
               <WaitlistForm variant="inline" />
             </div>
           </div>
