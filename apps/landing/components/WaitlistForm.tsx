@@ -1,9 +1,8 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import useWaitlistForm from "@/lib/useWaitlistForm";
 import { cn } from "@/lib/utils";
-import { Input } from "@nexus-politics/ui";
+import { Button, Input } from "@nexus-politics/ui";
 import { ReloadIcon } from "@radix-ui/react-icons";
 
 interface WaitlistFormProps {
