@@ -1,7 +1,10 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import useWaitlistForm from "@/lib/useWaitlistForm";
 import { cn } from "@/lib/utils";
+import { Input } from "@nexus-politics/ui";
+import { ReloadIcon } from "@radix-ui/react-icons";
 
 interface WaitlistFormProps {
   variant?: "inline" | "stacked";
@@ -26,12 +29,12 @@ export default function WaitlistForm({
         )}
       >
         <div className="w-full">
-          <input
+          <Input
             type="email"
             placeholder="Enter your email"
             className={cn(
-              "w-full rounded-md border border-[#C9DBFD]/30 bg-[#0E191C]/80 p-3 text-white",
-              "focus:outline-none focus:ring-2 focus:ring-[#DA655E]",
+              "h-12 w-full border-[#C9DBFD]/30 bg-[#0E191C]/80 text-sm text-white",
+              "focus-visible:ring-[#DA655E] focus-visible:ring-opacity-50",
               status === "error" && "border-red-500",
             )}
             value={email}
@@ -39,42 +42,25 @@ export default function WaitlistForm({
             disabled={status === "loading" || status === "success"}
           />
         </div>
-        <button
+        <Button
           type="submit"
           className={cn(
-            "rounded-md bg-[#DA655E] p-3 font-semibold text-white",
-            "transition-colors hover:bg-[#9B3D3D]",
-            "flex items-center justify-center disabled:cursor-not-allowed disabled:opacity-50",
+            "h-12 bg-[#DA655E] text-sm font-semibold text-white",
+            "hover:bg-[#9B3D3D]",
           )}
           disabled={status === "loading" || status === "success"}
         >
           {status === "loading" ? (
-            <svg
-              className="h-5 w-5 animate-spin text-white"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <circle
-                className="opacity-25"
-                cx="12"
-                cy="12"
-                r="10"
-                stroke="currentColor"
-                strokeWidth="4"
-              ></circle>
-              <path
-                className="opacity-75"
-                fill="currentColor"
-                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-              ></path>
-            </svg>
+            <>
+              <ReloadIcon className="mr-2 h-4 w-4 animate-spin" />
+              Loading
+            </>
           ) : status === "success" ? (
             "Joined!"
           ) : (
             "Join Waitlist"
           )}
-        </button>
+        </Button>
 
         {message && (
           <div
